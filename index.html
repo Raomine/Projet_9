@@ -44,16 +44,22 @@
 				</div>
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img width="1900" height="878" src="./assets/images/slider/wedding_photo.webp"
-							class="d-block w-100" alt="Photo de mariage">
+						<img src="./assets/images/slider/wedding_photo.webp" class="d-block w-100"
+							alt="Photo de mariage"
+							srcset="./assets/images/slider/wedding_photo_mobile.webp 750w, ./assets/images/slider/wedding_photo.webp 1900w"
+							sizes="(max-width: 768px) 750px, 1900px">
 					</div>
 					<div class="carousel-item">
-						<img width="1900" height="879" src="./assets/images/slider/audience_in_a_concert.webp"
-							class="d-block w-100" alt="Public à un concert">
+						<img src="./assets/images/slider/audience_in_a_concert.webp" class="d-block w-100"
+							alt="Public à un concert"
+							srcset="./assets/images/slider/audience_in_a_concert_mobile.webp 750w, ./assets/images/slider/audience_in_a_concert.webp 1900w"
+							sizes="(max-width: 768px) 750px, 1900px">>
 					</div>
 					<div class="carousel-item">
-						<img width="1900" height="878" src="./assets/images/slider/pedestrian_crossing.webp"
-							class="d-block w-100" alt="Homme sur un passage piéton">
+						<img src="./assets/images/slider/pedestrian_crossing.webp" class="d-block w-100"
+							alt="Homme sur un passage piéton"
+							srcset="./assets/images/slider/pedestrian_crossing.webp 750w, ./assets/images/slider/pedestrian_crossing.webp 1900w"
+							sizes="(max-width: 768px) 750px, 1900px">>
 					</div>
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -100,14 +106,14 @@
 						alt="Plublic dans un concert" />
 					<img data-gallery-tag="Entreprises" class="gallery-item" width="267" height="400"
 						src="./assets/images/gallery/enterprise/businessman.webp" alt="Entrepreneur" />
-					<img data-gallery-tag="Entreprises" class="gallery-item" width="739" height="500"
+					<img data-gallery-tag="Entreprises" class="gallery-item" width="400" height="271"
 						src="./assets/images/gallery/enterprise/smile_in_the_workplace.webp" alt="Travail d'équipe" />
 					<img data-gallery-tag="Mariages" class="gallery-item" width="400" height="320"
 						src="./assets/images/gallery/weddings/the_bride_and_groom_hold_hands.webp"
 						alt="Mariès main dans la main" />
 					<img data-gallery-tag="Portrait" class="gallery-item" width="267" height="400"
 						src="./assets/images/gallery/portraits/close_eyes.webp" alt="Homme les yeux fermés" />
-					<img data-gallery-tag="Mariages" class="gallery-item" width="500" height="750"
+					<img data-gallery-tag="Mariages" class="gallery-item" width="267" height="400"
 						src="./assets/images/gallery/weddings/the_bride_and_groom_hold_hands2.webp"
 						alt="Mariés main dans la main" />
 					<img data-gallery-tag="Portrait" class="gallery-item" width="267" height="400"
@@ -192,7 +198,7 @@
 					<label for="nom">Nom</label>
 					<input type="text" name="nom" id="nom">
 					<label for="email">Email</label>
-					<input type="email" name="email" id="email">
+					<input type="email" name="email" id="email" autocomplete="off">
 					<label for="message">Message</label>
 					<textarea name="message" id="message" cols="30" rows="10"></textarea>
 					<input type="submit" value="Envoyer" />
