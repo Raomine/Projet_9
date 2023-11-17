@@ -360,7 +360,7 @@ input[type="submit"] {
 	}
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 650px) {
 	.top-header {
 		flex-direction: column;
 		padding-inline: 0;
