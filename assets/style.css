@@ -137,12 +137,12 @@ body {
 
 .carousel-control-prev-icon {
 	width: 2rem;
-	height: 2rem;
+	height: 3.36rem;
 }
 
 .carousel-control-next-icon {
 	width: 2rem;
-	height: 2rem;
+	height: 3.36rem;
 }
 
 #about {
@@ -223,7 +223,7 @@ body {
 
 #filters .active {
 	color: #fff;
-	background-color: #BEB45A;
+	background-color: #595926;
 	border-radius: 0;
 }
 
