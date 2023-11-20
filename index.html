@@ -60,15 +60,11 @@
 							class="banner_img" alt="Photo de mariage">
 					</div>
 				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-					data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
+				<button class="carousel-control-prev" type="button">
+					<img class="carousel-control-prev-icon" src="./assets/images/arrow_left.png" alt="flèche gauche">
 				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-					data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
+				<button class="carousel-control-next" type="button">
+					<img class="carousel-control-next-icon" src="./assets/images/arrow_right.png" alt="flèche droite">
 				</button>
 			</div>
 		</section>
@@ -95,46 +91,62 @@
 					tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 			</div>
 		</section>
-		<section id="gallery">
-			<h2 class="title">Portfolio</h2>
-			<div class="container py-3">
-				<div class="gallery" style="display: none">
-					<img loading="lazy" data-gallery-tag="Concert" class="gallery-item" width="300" height="400"
+		<div class="container py-3">
+			<section id="gallery">
+				<h2 class="title">Portfolio</h2>
+				<section id="filters">
+					<div id="all" class="active">Tous</div>
+					<div id="concert" class="">Concert</div>
+					<div id="enterprise" class="">Entreprises</div>
+					<div id="wedding" class="">Mariages</div>
+					<div id="portrait" class="">Portrait</div>
+				</section>
+				<div class="gallery">
+
+					<img loading="lazy" data-concert class="gallery_img active" width="300" height="400"
 						src="./assets/images/gallery/concerts/audience_at_a_concert.webp"
 						alt="Plublic dans un concert" />
-					<img loading="lazy" data-gallery-tag="Entreprises" class="gallery-item" width="267" height="400"
+
+					<img loading="lazy" data-enterprise class="gallery_img active" width="267" height="400"
 						src="./assets/images/gallery/enterprise/businessman.webp" alt="Entrepreneur" />
-					<img loading="lazy" data-gallery-tag="Entreprises" class="gallery-item" width="400" height="271"
+
+					<img loading="lazy" data-enterprise class="gallery_img active" width="400" height="271"
 						src="./assets/images/gallery/enterprise/smile_in_the_workplace.webp" alt="Travail d'équipe" />
-					<img loading="lazy" data-gallery-tag="Mariages" class="gallery-item" width="400" height="320"
+
+					<img loading="lazy" data-wedding class="gallery_img active" width="400" height="320"
 						src="./assets/images/gallery/weddings/the_bride_and_groom_hold_hands.webp"
 						alt="Mariès main dans la main" />
-					<img loading="lazy" data-gallery-tag="Portrait" class="gallery-item" width="267" height="400"
+
+					<img loading="lazy" data-portrait class="gallery_img active" width="267" height="400"
 						src="./assets/images/gallery/portraits/close_eyes.webp" alt="Homme les yeux fermés" />
-					<img loading="lazy" data-gallery-tag="Mariages" class="gallery-item" width="267" height="400"
+
+					<img loading="lazy" data-wedding class="gallery_img active" width="267" height="400"
 						src="./assets/images/gallery/weddings/the_bride_and_groom_hold_hands2.webp"
 						alt="Mariés main dans la main" />
-					<img loading="lazy" data-gallery-tag="Portrait" class="gallery-item" width="267" height="400"
+
+					<img loading="lazy" data-portrait class="gallery_img active" width="267" height="400"
 						src="./assets/images/gallery/portraits/woman_portrait.webp" alt="Portrait d'une femme" />
-					<img loading="lazy" data-gallery-tag="Concert" class="gallery-item" width="400" height="266"
+
+					<img loading="lazy" data-concert class="gallery_img active" width="400" height="266"
 						src="./assets/images/gallery/concerts/singer_at_a_concert.webp" alt="Chanteur" />
-					<img loading="lazy" data-gallery-tag="Entreprises" class="gallery-item" width="400" height="245"
+
+					<img loading="lazy" data-enterprise class="gallery_img active" width="400" height="245"
 						src="./assets/images/gallery/enterprise/smile_in_the_workplace2.webp"
 						alt="Femme sur son lieu de travail" />
 				</div>
-			</div>
-			<div class="quote">
-				<figure>
-					<blockquote>
-						<h3 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un
-							fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude
-							n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la
-							vérité.
-						</h3>
-					</blockquote>
-					<figcaption class="quote__author">- Richard Avedon</figcaption>
-				</figure>
-			</div>
+		</div>
+		<div class="quote">
+			<figure>
+				<blockquote>
+					<h3 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un
+						fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude
+						n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la
+						vérité.
+					</h3>
+				</blockquote>
+				<figcaption class="quote__author">- Richard Avedon</figcaption>
+			</figure>
+		</div>
 		</section>
 		<section id="services">
 			<h2 class="title">Mes services</h2>
@@ -208,9 +220,6 @@
 		</div>
 	</footer>
 
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.js"></script>
 	<script src="./assets/scripts.js"></script>
 </body>
 

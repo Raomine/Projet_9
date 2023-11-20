@@ -1,19 +1,3 @@
-$(document).ready(function () {
-  $(".gallery").mauGallery({
-    columns: {
-      xs: 1,
-      sm: 2,
-      md: 3,
-      lg: 3,
-      xl: 3,
-    },
-    lightBox: true,
-    lightboxId: "myAwesomeLightbox",
-    showTags: true,
-    tagsPosition: "top",
-  });
-});
-
 const slides = [
   {
     image: "wedding_photo.webp",
@@ -51,3 +35,34 @@ arrowRight.addEventListener("click", () => {
   bannerImage.src = "./assets/images/slider/" + slides[img].image;
   dotSelected[img].classList.add("dot_selected");
 });
+
+function getCategories() {
+  const filters = document.querySelectorAll("#filters div");
+
+  filters.forEach((filter) => {
+    filter.addEventListener("click", function () {
+      const tag = this.id;
+
+      const images = document.querySelectorAll(".gallery img");
+
+      images.forEach((image) => {
+        image.classList.replace("active", "inactive");
+
+        if (tag in image.dataset || tag === "all") {
+          image.classList.replace("inactive", "active");
+        }
+      });
+    });
+  });
+
+  filters.forEach((element) => {
+    element.addEventListener("click", () => {
+      filters.forEach((element) => {
+        element.classList.remove("active");
+      });
+      element.classList.add("active");
+    });
+  });
+}
+
+window.addEventListener("DOMContentLoaded", getCategories);
