@@ -66,3 +66,43 @@ function getCategories() {
 }
 
 window.addEventListener("DOMContentLoaded", getCategories);
+
+const modal = document.querySelector(".modal");
+const activate = document.querySelectorAll(".activate");
+
+activate.forEach((activate) =>
+  activate.addEventListener("click", openAndCloseModal)
+);
+function openAndCloseModal() {
+  modal.classList.toggle("active");
+}
+
+const gallery = document.querySelectorAll(".gallery .gallery_img ");
+const modalImg = document.querySelector(".modal_img");
+
+window.onload = () => {
+  for (let i = 0; i < gallery.length; i++) {
+    let index = i;
+    gallery[i].onclick = () => {
+      function preview() {
+        let selectedImgUrl = gallery[index].src;
+        modalImg.src = selectedImgUrl;
+      }
+
+      const leftArrow = document.querySelector(".arrow_left");
+      const righttArrow = document.querySelector(".arrow_right");
+
+      leftArrow.onclick = () => {
+        index = (index - 1 + gallery.length) % gallery.length;
+        preview();
+      };
+
+      righttArrow.onclick = () => {
+        index = (index + 1) % gallery.length;
+        preview();
+      };
+
+      preview();
+    };
+  }
+};

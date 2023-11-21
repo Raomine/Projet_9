@@ -57,10 +57,12 @@
 					</div>
 				</div>
 				<button class="carousel-control-prev" type="button">
-					<img class="carousel-control-prev-icon" src="./assets/images/arrow_left.png" alt="flèche gauche">
+					<img class="carousel-control-prev-icon" src="./assets/images/arrow_carousel.png"
+						alt="flèche gauche">
 				</button>
 				<button class="carousel-control-next" type="button">
-					<img class="carousel-control-next-icon" src="./assets/images/arrow_right.png" alt="flèche droite">
+					<img class="carousel-control-next-icon" src="./assets/images/arrow_carousel.png"
+						alt="flèche droite">
 				</button>
 			</div>
 		</section>
@@ -87,7 +89,7 @@
 					tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 			</div>
 		</section>
-		<div class="container py-3">
+		<div class="container">
 			<section id="gallery">
 				<h2 class="title">Portfolio</h2>
 				<section id="filters">
@@ -97,36 +99,43 @@
 					<div id="wedding" class="">Mariages</div>
 					<div id="portrait" class="">Portrait</div>
 				</section>
+				<div class="modal">
+					<div class="modal__open activate"></div>
+					<div class="firstModal">
+						<img class="arrow_left" src="./assets/images/arrow_modal.png" alt="flèche gauche">
+						<img class="modal_img" src="" alt="Images de la galerie">
+						<img class="arrow_right" src="./assets/images/arrow_modal.png" alt="flèche droite">
+					</div>
+				</div>
 				<div class="gallery">
-
-					<img loading="lazy" data-concert class="gallery_img active" width="300" height="400"
+					<img loading="lazy" data-concert class="gallery_img active activate" width="300" height="400"
 						src="./assets/images/gallery/concerts/audience_at_a_concert.webp"
 						alt="Plublic dans un concert" />
 
-					<img loading="lazy" data-enterprise class="gallery_img active" width="267" height="400"
+					<img loading="lazy" data-enterprise class="gallery_img active activate" width="267" height="400"
 						src="./assets/images/gallery/enterprise/businessman.webp" alt="Entrepreneur" />
 
-					<img loading="lazy" data-enterprise class="gallery_img active" width="400" height="271"
+					<img loading="lazy" data-enterprise class="gallery_img active activate" width="400" height="271"
 						src="./assets/images/gallery/enterprise/smile_in_the_workplace.webp" alt="Travail d'équipe" />
 
-					<img loading="lazy" data-wedding class="gallery_img active" width="400" height="320"
+					<img loading="lazy" data-wedding class="gallery_img active activate" width="400" height="320"
 						src="./assets/images/gallery/weddings/the_bride_and_groom_hold_hands.webp"
 						alt="Mariès main dans la main" />
 
-					<img loading="lazy" data-portrait class="gallery_img active" width="267" height="400"
+					<img loading="lazy" data-portrait class="gallery_img active activate" width="267" height="400"
 						src="./assets/images/gallery/portraits/close_eyes.webp" alt="Homme les yeux fermés" />
 
-					<img loading="lazy" data-wedding class="gallery_img active" width="267" height="400"
+					<img loading="lazy" data-wedding class="gallery_img active activate" width="267" height="400"
 						src="./assets/images/gallery/weddings/the_bride_and_groom_hold_hands2.webp"
 						alt="Mariés main dans la main" />
 
-					<img loading="lazy" data-portrait class="gallery_img active" width="267" height="400"
+					<img loading="lazy" data-portrait class="gallery_img active activate" width="267" height="400"
 						src="./assets/images/gallery/portraits/woman_portrait.webp" alt="Portrait d'une femme" />
 
-					<img loading="lazy" data-concert class="gallery_img active" width="400" height="266"
+					<img loading="lazy" data-concert class="gallery_img active activate" width="400" height="266"
 						src="./assets/images/gallery/concerts/singer_at_a_concert.webp" alt="Chanteur" />
 
-					<img loading="lazy" data-enterprise class="gallery_img active" width="400" height="245"
+					<img loading="lazy" data-enterprise class="gallery_img active activate" width="400" height="245"
 						src="./assets/images/gallery/enterprise/smile_in_the_workplace2.webp"
 						alt="Femme sur son lieu de travail" />
 				</div>
