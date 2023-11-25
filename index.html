@@ -58,12 +58,22 @@
 					</div>
 				</div>
 				<button class="carousel-control-prev" type="button">
-					<img width="47" height="79" class="carousel-control-prev-icon"
-						src="./assets/images/arrow-carousel.webp" alt="flèche gauche">
+					<picture>
+						<source width="27" height="45" srcset="./assets/images/arrow_carousel_mobile.webp"
+							media="(max-width:650px)">
+						<source srcset="./assets/images/arrow-carousel.webp" media="(min-width:650px)">
+						<img width="47" height="79" class="carousel-control-prev-icon"
+							src="./assets/images/arrow-carousel.webp" alt="flèche gauche">
+					</picture>
 				</button>
 				<button class="carousel-control-next" type="button">
-					<img width="47" height="79" class="carousel-control-next-icon"
-						src="./assets/images/arrow-carousel.webp" alt="flèche droite">
+					<picture>
+						<source width="27" height="45" media="(max-width: 650px )"
+							srcset="./assets/images/arrow_carousel_mobile.webp">
+						<source media="(min-width: 650px)" srcset="./assets/images/arrow-carousel.webp">
+						<img width="47" height="79" class="carousel-control-next-icon"
+							src="./assets/images/arrow-carousel.webp" alt="flèche droite">
+					</picture>
 				</button>
 			</div>
 		</section>

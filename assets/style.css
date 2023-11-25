@@ -140,14 +140,7 @@ img {
 }
 
 .carousel-control-prev-icon {
-  width: 2rem;
-  height: 3.36rem;
   rotate: 180deg;
-}
-
-.carousel-control-next-icon {
-  width: 2rem;
-  height: 3.36rem;
 }
 
 #about {
