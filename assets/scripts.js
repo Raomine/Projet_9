@@ -2,14 +2,17 @@ const slides = [
   {
     image: "wedding_photo.webp",
     tag: "Photo de mariage",
+    source: "wedding_photo_mobile.webp",
   },
   {
     image: "audience_in_a_concert.webp",
     tag: "Plublic dans un concert",
+    source: "audience_in_a_concert_mobile.webp",
   },
   {
     image: "pedestrian_crossing.webp",
     tag: "Homme sur un passage piéton",
+    source: "pedestrian_crossing_mobile.webp",
   },
 ];
 
@@ -17,6 +20,8 @@ let arrowLeft = document.querySelector(".carousel-control-prev");
 let arrowRight = document.querySelector(".carousel-control-next");
 let dots = document.querySelector(".carousel-indicators");
 let bannerImage = document.querySelector(".banner_img");
+let bannerSource = document.querySelector(".source");
+let bannerSourceTwo = document.querySelector(".source_two");
 let img = 0;
 let dotSelected = document.querySelectorAll(".dot");
 dotSelected[img].classList.add("dot_selected");
@@ -28,6 +33,8 @@ arrowLeft.addEventListener("click", () => {
 
   bannerImage.src = "./assets/images/slider/" + slides[img].image;
   bannerImage.alt = slides[img].tag;
+  bannerSource.srcset = "./assets/images/slider/" + slides[img].source;
+  bannerSourceTwo.srcset = "./assets/images/slider/" + slides[img].image;
   dotSelected[img].classList.add("dot_selected");
 });
 
@@ -38,6 +45,8 @@ arrowRight.addEventListener("click", () => {
 
   bannerImage.src = "./assets/images/slider/" + slides[img].image;
   bannerImage.alt = slides[img].tag;
+  bannerSource.srcset = "./assets/images/slider/" + slides[img].source;
+  bannerSourceTwo.srcset = "./assets/images/slider/" + slides[img].image;
   dotSelected[img].classList.add("dot_selected");
 });
 

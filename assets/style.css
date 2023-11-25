@@ -461,6 +461,14 @@ input[type="submit"] {
   padding: 0.5em 1em;
 }
 
+.locality {
+  position: relative;
+  z-index: 2;
+  margin: 50px;
+  text-align: center;
+  line-height: 175%;
+}
+
 @media all and (max-width: 1180px) {
   .picture {
     flex: 2;

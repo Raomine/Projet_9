@@ -53,8 +53,14 @@
 				</div>
 				<div class="carousel-inner">
 					<div class="carousel-item">
-						<img width="1200" height="555" src="./assets/images/slider/wedding_photo.webp"
-							class="banner_img" alt="Photo de mariage" />
+						<picture>
+							<source class="source" media="(max-width:650px)"
+								srcset="./assets/images/slider/wedding_photo_mobile.webp">
+							<source class="source_two" media="(min-width:650px)"
+								srcset="./assets/images/slider/wedding_photo.webp">
+							<img width="1200" height="555" src="./assets/images/slider/wedding_photo.webp"
+								class="banner_img" alt="Photo de mariage" />
+						</picture>
 					</div>
 				</div>
 				<button class="carousel-control-prev" type="button">
@@ -279,6 +285,15 @@
 			</div>
 			<div class="picture right">
 				<img loading="lazy" width="400" height="399" src="./assets/images/camera.webp" alt="Caméra">
+			</div>
+		</div>
+		<div class="locality" itemscope itemtype=”https://raomine.github.io/Projet_9/”>
+			<span itemprop=”name”>Nina Carducci | Photographie</span>
+
+			<div itemprop=”address” itemscope itemtype=”https://raomine.github.io/Projet_9/”>
+				<span itemprop=”addressLocality”>Paris</span>,
+				<span itemprop=”addressRegion”>Île-de-France</span>
+				<span itemprop=”postalCode”>75000</span>
 			</div>
 		</div>
 	</footer>
