@@ -128,15 +128,15 @@
 				</div>
 				<div class="gallery">
 					<picture data-concert class="gallery_img active activate">
-						<source  srcset="./assets/images/gallery/concerts/audience_at_a_concert_mobile.webp"
+						<source srcset="./assets/images/gallery/concerts/audience_at_a_concert_mobile.webp"
 							media="(max-width:650px)">
-						<source  srcset="./assets/images/gallery/concerts/audience_at_a_concert.webp"
+						<source srcset="./assets/images/gallery/concerts/audience_at_a_concert.webp"
 							media="(min-width:650px)">
 						<img loading="lazy" data-concert width="300" height="400"
 							src="./assets/images/gallery/concerts/audience_at_a_concert.webp"
 							alt="Public à un concert" />
 					</picture>
-					<picture data-enterprise class="gallery_img active activate" >
+					<picture data-enterprise class="gallery_img active activate">
 						<source srcset="./assets/images/gallery/enterprise/businessman_mobile.webp"
 							media="(max-width:650px)">
 						<source srcset="./assets/images/gallery/enterprise/businessman.webp" media="(min-width:650px)">
@@ -148,11 +148,11 @@
 							media="(max-width:650px)">
 						<source srcset="./assets/images/gallery/enterprise/smile_in_the_workplace.webp"
 							media="(min-width:650px)">
-						<img loading="lazy"  width="400" height="271"
+						<img loading="lazy" width="400" height="271"
 							src="./assets/images/gallery/enterprise/smile_in_the_workplace.webp"
 							alt="Travail d'équipe" />
 					</picture>
-					<picture  data-wedding class="gallery_img active activate">
+					<picture data-wedding class="gallery_img active activate">
 						<source srcset="./assets/images/gallery/weddings/the_bride_and_groom_hold_hands_mobile.webp"
 							media="(max-width:650px)">
 						<source srcset="./assets/images/gallery/weddings/the_bride_and_groom_hold_hands.webp"
@@ -287,19 +287,17 @@
 				<img loading="lazy" width="400" height="399" src="./assets/images/camera.webp" alt="Caméra">
 			</div>
 		</div>
-		<div class="locality" itemscope itemtype=”https://raomine.github.io/Projet_9/”>
-			<span itemprop=”name”>Nina Carducci</span>
-
-			<div itemprop=”address” itemscope itemtype=”https://raomine.github.io/Projet_9/”>
-				<span itemprop=”streetAddress”>68 Avenue Alsace Lorraine</span>,
+		<div itemscope itemtype="https://schema.org/LocalBusiness">
+			<h1><span itemprop="name">Nina Carducci</span></h1>
+			<span itemprop="jobTitle">Photographe</span>
+			<div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+				<span itemprop="streetAddress">68 Avenue Alsace Lorraine</span>,
+				<span itemprop="addressLocality">Bordeaux</span>,
 				<span itemprop=”postalCode”>33200</span>
-				<span itemprop=”addressRegion”>Bordeaux</span>
 			</div>
-			<div itemscope itemtype="https://raomine.github.io/Projet_9/">
-				<p>Téléphone: <span itemprop="telephone">05.56.67.78.89</span></p>
-				<p>Joignable: <span itemprop="openingHours" content="Mo,Tu,We,Th, Fr 10:00-19:00">Du Lundi au vendredi
-						de 10h à 19h</span></p>
-			</div>
+			Téléphone: <span itemprop="telephone">05.56.67.78.89</span>
+			| Joignable: <span itemprop="openingHours" content="Mo,Tu,We,Th, Fr 10:00-19:00">Du Lundi au vendredi
+				de 10h à 19h</span>
 		</div>
 	</footer>
 
